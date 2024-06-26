@@ -73,6 +73,7 @@
   'opsz' 24
 }
 
+.star{ transition: 0.5s }
 
 input[type="checkbox"]:checked + .star{
     .material-symbols-outlined {
