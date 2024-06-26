@@ -1,0 +1,201 @@
+:root {
+  --color-dorado-principal: #eabe3f;
+  --color-background-negro:  #0A0E11;
+  --color-negro-secundario: #151515;
+}
+
+#contacto, #contacto > a {
+  background-color: var(--color-dorado-principal);
+  color: var(--color-negro-secundario);
+}
+
+#contacto:hover, #contacto:hover > a {
+  background-color: var(--color-negro-secundario);
+  color: var(--color-dorado-principal);
+  transition: 0.5s;
+}
+
+.container, .barra-lateral {
+  height: 110vh;
+}
+
+#titulo-main {
+  text-align: center;
+  color: var(--color-dorado-principal);
+}
+
+#formulario-y-contacto {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: space-around;
+}
+
+#titulo-formulario {
+  font-size: 18px;
+  text-align: left;
+}
+
+#formulario-contacto {
+  border: 1px solid var(--color-dorado-principal);
+  border-radius: 20px 40px;
+  display: inline-block;
+  width: 35%;
+  height: 400px;
+  margin-left: 20px;
+  padding-left: 24.5px;
+  background-color: var(--color-negro-secundario);
+}
+
+#form {
+  margin-left: 10px;
+  height: 350px;
+  color: var(--color-dorado-principal);
+}
+
+#form > label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#form > input, #form > textarea {
+  width: 87%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#form > textarea {
+  height: 80px;
+}
+
+#form > button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: #222222;
+  color: var(--color-dorado-principal);
+}
+
+#form > button[type="submit"]{
+  background-color: var(--color-dorado-principal);
+  width: 52px;
+  color: black;
+}
+
+::placeholder{
+  padding-left: 10px;
+}
+
+textarea::placeholder{
+  padding-top: 10px;
+}
+
+#contenedor-informacion {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  width: 45%;
+}
+
+#dolar-api, #dolar-api:visited {
+  background-color: #3730a3;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 1s linear;
+}
+
+#dolar-api:hover{
+  background-color: var(--color-negro-secundario);
+  color: var(--color-dorado-principal);
+  font-weight: 600;
+}
+
+#datos-contacto-utn {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  padding-left: 10px;
+  border-radius: 10px 20px;
+  background-color: var(--color-negro-secundario);
+}
+
+.datos-contacto > h2 {
+  color: var(--color-dorado-principal);
+}
+
+#logo-utn {
+  width: 12.15vw;
+  height: 8.15vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  
+  main {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      flex: 1;
+      box-sizing: border-box;
+      width: 100%;
+    }
+  
+    .container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+ 
+    #formulario-y-contacto {
+      flex-direction: column;
+      width: 100%;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    #formulario-contacto, #contenedor-informacion {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+
+    #logo-utn {
+      width: 70%;
+      height: 70%;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+   
+}
+
+@media screen and (min-width: 1573px) and (max-width: 1920px){
+
+ #datos-contacto-utn{
+  width: 91%;
+ }
+
+  #logo-utn{
+    margin-left: 30px;
+    width: 11vw;
+    height: 8.5vw;
+  }
+}

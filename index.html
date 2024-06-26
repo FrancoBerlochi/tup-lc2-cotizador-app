@@ -1,61 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/common.css">
     <link rel="stylesheet" href="./css/pages/index.css">
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="icon" href="img/favicon.png">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
     <title>Cotizador Web</title> 
 </head>
 <body>
+  <input type="checkbox" class="btn-hamburguesa">
+  <label class="hamburguesa"></label>
+  <div class="contenedor-barra-main">
     <header id="header">
       <h1>Cotizador Web</h1>
       <img src="./img/logo.jpg" alt="logo">
     </header>
-   
-    <footer>
-      <table>
+    <section class="container">
+      <section class="barra-lateral">
+        <a href="./index.html" class="link-botones"><button class="botones-barra" id="inicio">Inicio</button></a>
+        <a href="./miarchivo.html" class="link-botones"><button class="botones-barra">Archivo</button></a>
+        <a href="./informes.html" class="link-botones"><button class="botones-barra">Informes</button></a>
+        <a href="./Contacto.html" class="link-botones"><button class="botones-barra">Contacto</button></a>
+        <div id="comentarios">
+          <div class="contenedor-cliente">
+            <img src="./img/cliente.jpg" alt="cliente" id="img-cliente">
+          </div>
+          <h2>Roger Medina</h2>
+          <p>Estoy viviendo la buena vida, gracias JavaScript. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsam natus nemo quos possimus! Et, fuga quo, facilis rem, totam officia error culpa sequi repellat dolores aperiam reiciendis veritatis facere? lorem</p>
+        </div>
+      </section>
+      <main>
+        <div id="content">
+          <h2 class="titulo-main">Pizarra de cotizaciones</h2>
+        </div>
+        <article id="item-select">
+          <h3>Seleccione una moneda:</h3>
+          <select name="" id="" class="selector">
+            <option value="" disabled selected>Monedas:</option>
+            <option value="0">Dólares</option>
+            <option value="1">Dólar Oficial</option>
+            <option value="2">Dólar Blue</option>
+            <option value="3">Dólar Bolsa (MEP)</option>
+            <option value="4">Dólar Contado con Liqui (CCL)</option>
+            <option value="5">Dólar Tarjeta</option>
+            <option value="6">Dólar Mayorista</option>
+            <option value="7">Dólar Cripto</option>
+            <option value="8">Euro</option>
+            <option value="9">Real Brasileño</option>
+            <option value="10">Peso Chileno</option>
+            <option value="11">Peso Uruguayo</option>
+          </select>
+          <p id="lupa">🔎</p>
+        </article>
+        
+        <div id="container-parrafo"><p id="parrafo">Datos Actualizados al 15/5/2024 17:30hs</p></div>
+        
+        <section id="pizarra">
+          <article class="moneda"><p class="title-article-moneda">OFICIAL</p><img src="./img/united-states.png" class="bandera">
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox1" class="input-star-checkbox"><label for="star-checkbox1" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>
+          <article class="moneda"><p class="title-article-moneda">BLUE</p><img src="./img/european-union.png" class="bandera">
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox2" class="input-star-checkbox"><label for="star-checkbox2" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>
+          <article class="moneda"><p class="title-article-moneda">TARJETA</p><img src="./img/flag.png" class="bandera">
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox3" class="input-star-checkbox"><label for="star-checkbox3" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>
+          <article class="moneda"><p class="title-article-moneda">MEP</p><img src="./img/chile.png" class="bandera">
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox4" class="input-star-checkbox"><label for="star-checkbox4" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>
+          <article class="moneda"><p class="title-article-moneda">CCL</p><img src="./img/uruguay.png" class="bandera">
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox5" class="input-star-checkbox"><label for="star-checkbox5" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>
+          <article class="moneda"><div class="bandera"><img src=""></div><p class="title-article-moneda">CRIPTO</p>
+            <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+          <input type="checkbox" id="star-checkbox6" class="input-star-checkbox"><label for="star-checkbox6" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>          
+          <article class="moneda">
+            <p class="title-article-moneda">CRIPTO</p>
+            <div class="precio">
+            <div class="precio-compra">
+              <p>COMPRA</p>
+            <p>$1000</p>
+            </div>
+            <div class="precio-venta">
+              <p>VENTA</p>
+            <p>$1030</p>
+            </div>
+            </div>
+            <input type="checkbox" id="star-checkbox6" class="input-star-checkbox"><label for="star-checkbox6" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>          
+            <article class="moneda">
+              <p class="title-article-moneda">CRIPTO</p>
+              <div class="precio">
+              <div class="precio-compra">
+                <p>COMPRA</p>
+              <p>$1000</p>
+              </div>
+              <div class="precio-venta">
+                <p>VENTA</p>
+              <p>$1030</p>
+              </div>
+              </div>
+              <input type="checkbox" id="star-checkbox6" class="input-star-checkbox"><label for="star-checkbox6" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>          
+              <article class="moneda">
+                <p class="title-article-moneda">CRIPTO</p>
+                <div class="precio">
+                <div class="precio-compra">
+                  <p>COMPRA</p>
+                <p>$1000</p>
+                </div>
+                <div class="precio-venta">
+                  <p>VENTA</p>
+                <p>$1030</p>
+                </div>
+                </div>
+                <input type="checkbox" id="star-checkbox6" class="input-star-checkbox"><label for="star-checkbox6" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>          
+                <article class="moneda">
+                  <p class="title-article-moneda">CRIPTO</p>
+                  <div class="precio">
+                  <div class="precio-compra">
+                    <p>COMPRA</p>
+                  <p>$1000</p>
+                  </div>
+                  <div class="precio-venta">
+                    <p>VENTA</p>
+                  <p>$1030</p>
+                  </div>
+                  </div>
+                  <input type="checkbox" id="star-checkbox6" class="input-star-checkbox"><label for="star-checkbox6" class="star"><span class="material-symbols-outlined" style="font-size: 28px;">star</span></label></article>          
+        </section>
+                  
+      <p id="advertencia">Haga click en la estrella para guardar los datos de la cotización en sus favoritos.</p>
+      <div id="contenedor-dolar-api"><p id="datos-obtenidos" class="clase-dolar-api">Datos obtenidos de</p><a href="https://dolarapi.com" target="_blank" id="dolar-api" class="clase-dolar-api">DolarApi.com</a></div>            
+    </main>
+              </section>
+              <footer>
+      <table class="table-footer">
         <thead>
-            <th>INSTITUCIONAL</th>
-            <th>ACCESOS</th>
+          <th>INSTITUCIONAL</th>
+        
+          <th>ACCESOS</th>
             <th>CONTÁCTENOS</th>
             <th>DESARROLLADO POR</th>
         </thead>
         <tbody>
             <tr>
-              <td>> <a href="">¿Quiénes somos?</a></td>
-              <td>> <a href="">Inicio</a></td>
+              <td>> <a href="#">¿Quiénes somos?</a></td>
+              <td>> <a href="#">Inicio</a></td>
               <td>Universidad Tecnológica Nacional</td>
-              <td>Nombre y apellido</td>
+              <td><a href="mailto:francocaivano2002@gmail.com">Franco Caivano</a><br><a href="mailto:francoberlochi@gmail.com">Franco Berlochi</a><br><a href="mailto:sebacorf@hotmail.com">Sebastián Corfield</a></td>
             </tr>
 
             <tr>
-              <td>> <a href="">Socios estratégicos</a></td>
-              <td>> <a href="">Mi Archivo</a></td>
+              <td>> <a href="#">Socios estratégicos</a></td>
+              <td>> <a href="#">Mi Archivo</a></td>
               <td>Zeballos 1341</td>
               <td>TUP07 - 2024</a></td>
             </tr>
 
             <tr>
-                <td>> <a href="">Trabaje con nosotros</a></td>
-                <td>> <a href="">Informes</a></td>
+                <td>> <a href="#">Trabaje con nosotros</a></td>
+                <td>> <a href="#">Informes</a></td>
                 <td>Rosario</td>
-                <td><a href="">¡Escríbanos!</a></td>
+                <td><a href="Contacto.html">¡Escríbanos!</a></td>
             </tr>
 
             <tr>
-                <td>> <a href="">Ayuda</a></td>
-                <td>> <a href="">Contáctenos</a></td>
+                <td>> <a href="#">Ayuda</a></td>
+                <td>> <a href="#">Contáctenos</a></td>
                 <td>03414481871</td>
-                <td>aaa@gmail.com</td>
             </tr>
-            
+
             <tr>
                 <td colspan="4"><p>TUP - Cátedra de laboratorio de computacion 2 - Año 2024 </p></td>
             </tr>
         </tbody>
       </table>
     </footer>
-        
+</div>
 </body>
 </html>

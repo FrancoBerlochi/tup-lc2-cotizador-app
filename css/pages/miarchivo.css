@@ -1,0 +1,130 @@
+:root {
+  --color-dorado-principal: #eabe3f;
+  --color-background-negro:  #0A0E11;
+  --color-negro-secundario: #151515;
+}
+
+#archivo, #archivo > a {
+  background-color: var(--color-dorado-principal);
+  color: var(--color-negro-secundario);
+}
+
+#archivo:hover, #archivo:hover > a {
+  background-color: var(--color-negro-secundario);
+  color: var(--color-dorado-principal);
+  transition: 0.5s;
+}
+
+.container, .barra-lateral {
+  height: 140vh;
+  overflow-y: auto;
+}
+
+.container::-webkit-scrollbar, #table-container::-webkit-scrollbar{
+  display: none;
+}
+
+#contenedor-titulo-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--color-dorado-principal);
+}
+
+#titulo-main {
+    display: flex;
+    align-self: center;
+}
+
+#imprimir {
+    background-color: var(--color-background-negro);
+    border: none;
+    color: var(--color-dorado-principal);
+    font-size: 20px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+#table-container {
+  margin-bottom: 80px;
+}
+
+table#table-main {
+    border: 1px solid var(--color-negro-secundario);
+    background-color: var(--color-negro-secundario);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+
+  .fecha {
+    border-bottom: 1px solid var(--color-dorado-principal);
+  }
+  
+  #table-main td, #table-main th {
+    padding: 10px;
+    text-align: left;
+    width: 25%;
+  }
+  
+  #table-main tr  {
+    color: var(--color-dorado-principal);
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  #table-main .td-numeros {
+    color: green;
+  }
+
+  .td-numeros-compra {
+    color: red;
+  }
+  
+  #table-main tr > td > p {
+    font-family:sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+  }
+  
+  #table-main button {
+    cursor: pointer;
+    background-color: var(--color-negro-secundario);
+    border: none;
+    color: var(--color-dorado-principal);
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 480px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    
+      .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      #table-container {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
